@@ -1,5 +1,3 @@
-Claro, aqui está um exemplo de README para o projeto do site do Salão Mary Beauty Hair:
-
 # Salão Mary Beauty Hair Website
 
 Este projeto consiste na criação de um site para o Salão Mary Beauty Hair, utilizando React com JavaScript e CSS Tailwind. O objetivo do site é promover os serviços oferecidos pelo salão, bem como facilitar o contato com os clientes.
