@@ -39,7 +39,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
    
 ## Autor
 
-Este projeto foi desenvolvido por [Seu Nome](https://github.com/davikomura).
+Este projeto foi desenvolvido por [Davi Komura](https://github.com/davikomura).
 
 ## Licença
 
