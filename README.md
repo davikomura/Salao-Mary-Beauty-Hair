@@ -38,17 +38,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
    ```
    http://localhost:3000
    ```
-
-## Contribuição
-
-Contribuições são sempre bem-vindas! Se você deseja contribuir com este projeto, siga os passos abaixo:
-
-1. Faça um fork do projeto
-2. Crie uma branch com a sua feature (`git checkout -b feature/nova-feature`)
-3. Faça commit das suas mudanças (`git commit -am 'Adiciona nova feature'`)
-4. Faça push para a branch (`git push origin feature/nova-feature`)
-5. Abra um Pull Request
-
+   
 ## Autor
 
 Este projeto foi desenvolvido por [Seu Nome](https://github.com/davikomura).
