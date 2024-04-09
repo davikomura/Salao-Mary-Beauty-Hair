@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.png"
+import logos from "../../assets/logo_salao.jpg"
 
 const Navigation = () => {
 
@@ -10,14 +11,14 @@ const Navigation = () => {
     };
     
     return (
-        <nav class="bg-black dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 px-">
+        <nav class="bg-black dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-gray-200 dark:border-gray-600 px-">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a class="flex items-center space-x-3 rtl:space-x-reverse">
-                    {/* <img src={logo} class="h-8 w-8" alt="Flowbite Logo"/> */}
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Salão Mary</span>
+                <a class="flex items-center space-x-3 rtl:space-x-reverse fontgistely">
+                    <img src={logos} class="h-8 w-8" alt="Flowbite Logo"/>
+                    {/* <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Mary Beauty Hair</span> */}
                 </a>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <a href="#" class="mr-5">
+                    <a href="https://www.instagram.com/salaomaryslz/" class="mr-5">
                         <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                 <path
@@ -47,25 +48,25 @@ const Navigation = () => {
                 <div className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isMenuOpen ? '' : 'hidden'}`} id="navbar-cta">
                     <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-black">
                         <li>
-                            <a href="#" class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group">
+                            <a href="#Home" class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group page-scroll">
                                 Home
                                 <span class="absolute inset-x-0 bottom-0 h-0.5 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group">
+                            <a href="#About" class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group scroll-smooth focus:scroll-auto">
                                 Sobre Nós
                                 <span class="absolute inset-x-0 bottom-0 h-0.5 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group">
+                            <a href="#" class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group page-scroll">
                                 Nossos Serviços
                                 <span class="absolute inset-x-0 bottom-0 h-0.5 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group">
+                            <a href="#" class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group page-scroll">
                                 Contato
                                 <span class="absolute inset-x-0 bottom-0 h-0.5 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out"></span>
                             </a>

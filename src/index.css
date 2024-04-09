@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Importe a fonte Gistesy */
+@font-face {
+    font-family: 'Gistesy';
+    src: url('../public/Gistesy.ttf') format('truetype');
+}
+
+/* Defina a fonte padrão para Gistesy */
+.font-gistesy {
+font-family: 'Gistesy', sans-serif;
+}
