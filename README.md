@@ -1,8 +1,46 @@
-# React + Vite
+# Salão Mary Beauty Hair Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto consiste na criação de um site para o Salão Mary Beauty Hair, utilizando React com JavaScript e CSS Tailwind. O objetivo do site é promover os serviços oferecidos pelo salão, bem como facilitar o contato com os clientes.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- JavaScript
+- CSS Tailwind
+
+## Instalação
+
+Para rodar o projeto localmente, siga os passos abaixo:
+
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/davikomura/Salao-Mary-Beauty-Hair.git
+   ```
+
+2. Navegue até o diretório do projeto:
+   ```sh
+   cd Salao-Mary-Beauty-Hair
+   ```
+
+3. Instale as dependências:
+   ```sh
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+   ```sh
+   npm start
+   ```
+
+5. Acesse o site em seu navegador:
+   ```
+   http://localhost:3000
+   ```
+   
+## Autor
+
+Este projeto foi desenvolvido por [Davi Komura](https://github.com/davikomura).
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
