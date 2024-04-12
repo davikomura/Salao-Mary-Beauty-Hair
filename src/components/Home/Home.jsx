@@ -10,11 +10,11 @@ const Home = () => {
             </div>
             
             <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
-            <h1 class="text-5xl font-gistesy leading-tight mb-4">
-                <span class="text-white">Mary </span>
-                <span class="text-red-600">Beauty </span>
-                <span class="text-white">Hair</span>
-            </h1>
+                <h1 class="text-7xl font-gistesy leading-tight mb-4">
+                    <span class="text-white">Mary </span>
+                    <span class="text-red-600">Beauty </span>
+                    <span class="text-white">Hair</span>
+                </h1>
                 <p class="text-lg text-gray-300 mb-8">Centro de Beleza e Bem estar</p>
                 <a href="#" class="bg-yellow-400 text-gray-900 hover:bg-yellow-300 
                 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 

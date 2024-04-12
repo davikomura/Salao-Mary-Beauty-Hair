@@ -18,7 +18,7 @@ const Navigation = () => {
                     {/* <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Mary Beauty Hair</span> */}
                 </a>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <a href="https://www.instagram.com/salaomaryslz/" class="mr-5">
+                    <a href="https://www.instagram.com/salaomaryslz/" target="_blank" class="mr-5">
                         <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                 <path
@@ -60,7 +60,7 @@ const Navigation = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group page-scroll">
+                            <a href="#Servicos" class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group page-scroll">
                                 Nossos Serviços
                                 <span class="absolute inset-x-0 bottom-0 h-0.5 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out"></span>
                             </a>
