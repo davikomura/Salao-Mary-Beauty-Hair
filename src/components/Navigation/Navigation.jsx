@@ -66,7 +66,7 @@ const Navigation = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group page-scroll">
+                            <a href="#Contacts" class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group page-scroll">
                                 Contato
                                 <span class="absolute inset-x-0 bottom-0 h-0.5 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out"></span>
                             </a>
