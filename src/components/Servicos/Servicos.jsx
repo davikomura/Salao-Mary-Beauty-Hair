@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import hair_cut from "../../assets/hair-cut.jpg"
-import hair_styling from "../../assets/hair-styling.jpg"
-import makeup from "../../assets/makeup.jpg"
+import nails from "../../assets/nails.jpg"
 import hair_color from "../../assets/hair-color.jpg"
 import pedicure from "../../assets/pedicure.jpg"
 import sobrancelha from "../../assets/sobrancelha.jpg"
 import tratamentos_capilares from "../../assets/tratamentos-capilares.jpg"
+import { Link } from "react-router-dom";
 
 const Servicos = () => {
     return(
-        <section id="Servicos" class="pt-10 overflow-hidden bg-black dark:bg-gray-800 md:pt-0 sm:pt-16 2xl:pt-16">
+        <section id="Servicos" class="pt-10 overflow-hidden bg-black dark:bg-gray-800 md:pt-0 sm:pt-16 2xl:pt-16 2xl:pb-24">
             
             <div class="text-center">
                 <h2 class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white">
@@ -26,10 +26,10 @@ const Servicos = () => {
                         alt="Image 1"
                         class="w-full object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
                         />
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                            <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
-                                View
-                            </button>
+                        <div class="absolute inset-x-0 top-24 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <a class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+                                <Link to="/HairCut">View</Link>
+                            </a>
                         </div>
                         <div class="mt-4">
                             <h5 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl text-white">
@@ -40,18 +40,18 @@ const Servicos = () => {
                     
                     <div class="group cursor-pointer relative">
                         <img
-                        src={hair_styling}
+                        src={nails}
                         alt="Image 1"
                         class="w-full object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
                         />
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute inset-x-0 top-24 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                             <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
-                                View
+                                <Link to="/Nails">View</Link>
                             </button>
                         </div>
                         <div class="mt-4">
                             <h5 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl text-white">
-                                Hair Styling
+                                Nails
                             </h5>
                         </div>
                     </div>
@@ -62,9 +62,9 @@ const Servicos = () => {
                         alt="Image 1"
                         class="w-full object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
                         />
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute inset-x-0 top-24 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                             <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
-                                View
+                                <Link to="/HairColor">View</Link>
                             </button>
                         </div>
                         <div class="mt-4">
@@ -76,23 +76,23 @@ const Servicos = () => {
                     
                     <div class="group cursor-pointer relative">
                         <img
-                        src={makeup}
+                        src={sobrancelha}
                         alt="Image 1"
                         class="w-full object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
                         />
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute inset-x-0 top-24 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                             <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
-                                View
+                                <Link to="/Sobrancelha">View</Link>
                             </button>
                         </div>
                         <div class="mt-4">
                             <h5 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl text-white">
-                                Makeup
+                                Sobrancelha
                             </h5>
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+                {/* <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
                     <div class="group cursor-pointer relative">
                         <img
                         src={pedicure}
@@ -164,7 +164,7 @@ const Servicos = () => {
                             </h5>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
 
