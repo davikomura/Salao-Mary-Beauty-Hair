@@ -8,6 +8,7 @@ import HairColor from './Pages/Hair Color/HairColor.jsx';
 import Sobrancelha from './Pages/Sobrancelha/Sobrancelha.jsx';
 
 const routes = [
+  
   {
     path: "/",
     element: <App />,
@@ -15,22 +16,6 @@ const routes = [
       {
         path: "/",
         element: <Page />,
-      },
-      {
-        path: "/HairCut",
-        element: <HairCut />,
-      },
-      {
-        path: "/Nails",
-        element: <Nails />,
-      },
-      {
-        path: "/HairColor",
-        element: <HairColor />,
-      },
-      {
-        path: "/Sobrancelha",
-        element: <Sobrancelha />,
       },
     ]
   }

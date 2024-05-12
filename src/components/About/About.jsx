@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo_salao.jpg"
+import dona from "../../assets/img_dona.png"
 
 const About = () => {
     return(
@@ -18,10 +19,10 @@ const About = () => {
                         </p>
                     </div>
 
-                    <div className="relative">
-                        <img className="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" />
+                    <div className="relative bg-rose-300 rounded-full p-4">
+                        {/* <img className="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" /> */}
 
-                        <img className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/business-woman.png" alt="" />
+                        <img className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src={dona} alt="" />
                     </div>
 
                 </div>
