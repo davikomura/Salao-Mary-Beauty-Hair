@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import cabelo from "../../assets/img.jpg"
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -18,7 +19,11 @@ const Home = () => {
                 <p class="text-lg text-gray-300 mb-8">Centro de Beleza e Bem estar</p>
                 <a href="#" class="bg-yellow-400 text-gray-900 hover:bg-yellow-300 
                 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 
-                ease-in-out transform hover:scale-105 hover:shadow-lg">Agende Já</a>
+                ease-in-out transform hover:scale-105 hover:shadow-lg">
+                    <Link to="/Agendamento">
+                        Agende Já
+                    </Link>
+                </a>
             </div>
         </div>
     )

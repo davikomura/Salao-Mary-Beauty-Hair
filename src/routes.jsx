@@ -2,10 +2,7 @@ import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
 import Page from './Pages/Page.jsx';
-import HairCut from './Pages/Hair Cut/HairCut.jsx';
-import Nails from './Pages/Nails/Nails.jsx';
-import HairColor from './Pages/Hair Color/HairColor.jsx';
-import Sobrancelha from './Pages/Sobrancelha/Sobrancelha.jsx';
+import { Agenda } from './Pages/Agendamento/Agenda.jsx';
 
 const routes = [
   
@@ -16,6 +13,10 @@ const routes = [
       {
         path: "/",
         element: <Page />,
+      },
+      {
+        path: "/Agendamento",
+        element: <Agenda />,
       },
     ]
   }

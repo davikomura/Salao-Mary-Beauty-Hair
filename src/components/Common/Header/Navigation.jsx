@@ -51,7 +51,9 @@ const Navigation = () => {
                     <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-black">
                         <li>
                             <a href="#Home" class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group page-scroll">
-                                Home
+                                <Link to="/">
+                                    Home
+                                </Link>
                                 <span class="absolute inset-x-0 bottom-0 h-0.5 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out"></span>
                             </a>
                         </li>
