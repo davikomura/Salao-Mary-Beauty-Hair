@@ -22,7 +22,7 @@ const Modal = ({ servico, onClose }) => {
             </button>
             {showModal ? (
                 <div className="fixed inset-0 z-50 flex justify-center items-center">
-                    <div className="bg-white rounded-lg p-8 max-w-md w-full">
+                    <div className="bg-rose-100 rounded-lg p-8 max-w-md w-full">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-3xl font-semibold">Informações do Serviço</h3>
                             <button className="text-gray-500" onClick={handleModalClose}>

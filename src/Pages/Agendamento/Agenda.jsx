@@ -44,7 +44,7 @@ export const Agenda = () => {
             <input type="text" placeholder="Selecione um Serviço"
               className="px-2 pt-5 pb-2 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none" />
           </div> */}
-          <div className="relative flex items-center sm:col-span-2">
+          {/* <div className="relative flex items-center sm:col-span-2">
             <label className="text-[13px] text-white absolute top-[-10px] left-0 font-semibold">Email</label>
             <input type="email" placeholder="Enter email"
               className="px-2 pt-5 pb-2 bg-black w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none" />
@@ -64,7 +64,7 @@ export const Agenda = () => {
                   data-original="#000000"></path>
               </g>
             </svg>
-          </div>
+          </div> */}
           {/* <div className="relative flex items-center sm:col-span-2">
             <label className="text-[13px] absolute top-[-10px] left-0 font-semibold">Password</label>
             <input type="password" autocomplete="new-password" placeholder="Enter password"
