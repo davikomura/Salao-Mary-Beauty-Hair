@@ -15,7 +15,7 @@ const Navigation = () => {
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a class="flex items-center space-x-3 rtl:space-x-reverse fontgistely">
                     <Link to="/">
-                        <img src={logos} class="h-8 w-8" alt="MAry Beauty Logo"/>
+                        <img src={logos} class="h-8 w-8" alt="Mary Beauty Logo"/>
                     </Link>
                     {/* <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Mary Beauty Hair</span> */}
                 </a>

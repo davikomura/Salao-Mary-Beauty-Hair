@@ -1,0 +1,38 @@
+{
+    "servicos": [
+        { 
+            "nome": "Hair Cut", 
+            "imagem": "img/servicos/hair-cut.jpg", 
+            "descricao": "Nossos cortes de cabelo são adaptados ao estilo e às preferências individuais de cada cliente. Desde cortes clássicos a estilos modernos e ousados, nossos profissionais estão prontos para transformar seu visual, realçando suas melhores características e proporcionando um look renovado e elegante." 
+        },
+        { 
+            "nome": "Unhas", 
+            "imagem": "img/servicos/nails.jpg", 
+            "descricao": "Oferecemos serviços completos de manicure e pedicure, que incluem desde o corte e modelagem das unhas até a aplicação de esmaltes de alta qualidade. Nossos tratamentos também incluem cuidados com a cutícula, esfoliação e hidratação, garantindo mãos e pés bonitos e bem cuidados." 
+        },
+        { 
+            "nome": "Hair Color", 
+            "imagem": "img/servicos/hair-color.jpg", 
+            "descricao": "Nossa coloração de cabelo utiliza produtos de alta qualidade para garantir cores vibrantes e duradouras. Oferecemos uma ampla gama de opções, desde colorações completas até mechas e balayage, sempre priorizando a saúde dos seus fios e a obtenção de um resultado natural e deslumbrante." 
+        },
+        { 
+            "nome": "Sobrancelhas", 
+            "imagem": "img/servicos/sobrancelha.jpg", 
+            "descricao": "Nossos serviços de design de sobrancelhas são personalizados para realçar a beleza natural do seu rosto. Utilizamos técnicas precisas de modelagem, alinhamento e tintura para criar sobrancelhas perfeitamente definidas e harmoniosas." },
+        { 
+            "nome": "Tratamento Capilar", 
+            "imagem": "img/servicos/tratamento-capilar.jpg", 
+            "descricao": "Oferecemos uma variedade de tratamentos capilares para restaurar e manter a saúde dos seus cabelos. Desde hidratação profunda até reparação de danos e tratamentos específicos para couro cabeludo, nossos profissionais recomendam as melhores opções para suas necessidades individuais." 
+        },
+        { 
+            "nome": "Alisamentos", 
+            "imagem": "img/servicos/alisamento.jpg", 
+            "descricao": "Nossos alisamentos capilares utilizam técnicas avançadas para deixar seus cabelos lisos, brilhantes e fáceis de manejar. Oferecemos desde escovas progressivas como Selagem, Botox, Plastica dos fios e até alisamentos definitivos, sempre priorizando a integridade dos fios e o resultado natural." 
+        },
+        { 
+            "nome": "Penteados", 
+            "imagem": "img/servicos/penteados.jpg", 
+            "descricao": "Seja para uma ocasião especial ou para o dia a dia, nossos serviços de penteado proporcionam looks elegantes e sofisticados. Desde penteados clássicos até estilos modernos e despojados, nossos profissionais criam penteados que complementam seu estilo pessoal e realçam sua beleza natural." 
+        }
+    ]
+}

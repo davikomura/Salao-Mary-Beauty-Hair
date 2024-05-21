@@ -1,5 +1,5 @@
 import React from "react";
-import servicosData from "../../data/data.json";
+import servicosData from "/data.json";
 import Modal from "../Common/Modal/Modal";
 
 const Servicos = () => {

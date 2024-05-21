@@ -39,7 +39,7 @@ const Contacts = () => {
                     </div>
                     <div className="text-left text-white ml-8">
                         <h2 className="text-center md:text-left text-lg sm:text-xl md:text-2xl lg:text-3xl text-white mb-4">Email</h2>
-                        <p className="mb-6 text-center md:text-left">info@example.com</p>
+                        <p className="mb-6 text-center md:text-left">maryoliver.mo63@gmail.com</p>
                         <h2 className="text-center md:text-left text-lg sm:text-xl md:text-2xl lg:text-3xl text-white mb-4">Endereço</h2>
                         <p className="text-center md:text-left">R. Fé Em Deus, 610 - Quadra 113 - Jardim São Cristovão, São Luís - MA, 65055-190</p>
                     </div>
