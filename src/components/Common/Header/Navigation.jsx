@@ -9,6 +9,13 @@ const Navigation = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
     
     return (
         <nav class="bg-black dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-gray-200 dark:border-gray-600 px-">
@@ -50,7 +57,7 @@ const Navigation = () => {
                 <div className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isMenuOpen ? '' : 'hidden'}`} id="navbar-cta">
                     <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-black">
                         <li>
-                            <a href="#Home" class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group page-scroll">
+                            <a href="#Home" onClick={scrollToTop} class="block py-2 px-3 text-white rounded md:bg-transparent md:hover:text-yellow-400 md:p-0 relative group page-scroll">
                                 <Link to="/">
                                     Home
                                 </Link>
