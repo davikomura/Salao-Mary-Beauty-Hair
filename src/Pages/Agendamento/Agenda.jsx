@@ -11,22 +11,34 @@ export const Agenda = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    let formattedValue = value;
+
+    // Formata o número de telefone para (xx) xxxxx-xxxx
+    if (name === 'telefone') {
+      const match = value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
+      formattedValue = !match[2] ? match[1] : `(${match[1]}) ${match[2]}${match[3] ? `-${match[3]}` : ''}`;
+    }
+
     setFormData({
       ...formData,
-      [name]: value,
+      [name]: formattedValue,
     });
   };
 
   const handleSubmit = () => {
     const { nome, sobrenome, telefone, servico } = formData;
-    const whatsappMessage = `Olá, gostaria de agendar um serviço. 
-    Nome: ${nome} 
-    Sobrenome: ${sobrenome} 
-    Telefone: ${telefone} 
-    Serviço: ${servico}`;
+    if (nome && sobrenome && telefone && servico) {
+      const whatsappMessage = `Olá, gostaria de agendar um serviço. 
+      Nome: ${nome} 
+      Sobrenome: ${sobrenome} 
+      Telefone: ${telefone} 
+      Serviço: ${servico}`;
 
-    const whatsappLink = `https://api.whatsapp.com/send?phone=5598984623751&text=${encodeURIComponent(whatsappMessage)}`;
-    window.open(whatsappLink, '_blank');
+      const whatsappLink = `https://api.whatsapp.com/send?phone=5598984623751&text=${encodeURIComponent(whatsappMessage)}`;
+      window.open(whatsappLink, '_blank');
+    } else {
+      alert('Por favor, preencha todos os campos.');
+    }
   };
 
   return (
@@ -34,7 +46,7 @@ export const Agenda = () => {
       <form className="font-[sans-serif] text-[#333] max-w-4xl mx-auto px-6 my-6 mt-36" onSubmit={(e) => e.preventDefault()}>
         <div className="grid sm:grid-cols-2 gap-10">
           <div className="relative flex items-center">
-            <label className="text-[13px] text-white absolute top-[-10px] left-0 font-semibold">Nome</label>
+            <label className="text-[13px] text-white absolute top-[-10px] left-0 font-semibold">Nome <span className="text-red-500">*</span></label>
             <input
               type="text"
               name="nome"
@@ -42,6 +54,7 @@ export const Agenda = () => {
               value={formData.nome}
               onChange={handleChange}
               className="px-2 pt-5 pb-2 bg-black w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none text-gray-400"
+              required
             />
             <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" className="w-[18px] h-[18px] absolute right-4" viewBox="0 0 24 24">
               <circle cx="10" cy="7" r="6"></circle>
@@ -51,7 +64,7 @@ export const Agenda = () => {
             </svg>
           </div>
           <div className="relative flex items-center">
-            <label className="text-[13px] text-white absolute top-[-10px] left-0 font-semibold">Sobrenome</label>
+            <label className="text-[13px] text-white absolute top-[-10px] left-0 font-semibold">Sobrenome <span className="text-red-500">*</span></label>
             <input
               type="text"
               name="sobrenome"
@@ -59,6 +72,7 @@ export const Agenda = () => {
               value={formData.sobrenome}
               onChange={handleChange}
               className="px-2 pt-5 pb-2 bg-black w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none text-gray-400"
+              required
             />
             <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" className="w-[18px] h-[18px] absolute right-4" viewBox="0 0 24 24">
               <circle cx="10" cy="7" r="6"></circle>
@@ -68,14 +82,14 @@ export const Agenda = () => {
             </svg>
           </div>
           <div className="relative flex items-center">
-            <label className="text-[13px] text-white absolute top-[-10px] left-0 font-semibold">Número de Telefone</label>
+            <label className="text-[13px] text-white absolute top-[-10px] left-0 font-semibold">Número de Telefone <span className="text-red-500">*</span></label>
             <input
-              type="number"
               name="telefone"
-              placeholder="Digite o telefone"
+              placeholder="(xx) xxxxx-xxxx"
               value={formData.telefone}
               onChange={handleChange}
               className="px-2 pt-5 pb-2 bg-black w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none text-gray-400"
+              required
             />
             <svg fill="#bbb" className="w-[18px] h-[18px] absolute right-4" viewBox="0 0 64 64">
               <path
@@ -84,7 +98,7 @@ export const Agenda = () => {
             </svg>
           </div>
           <div className="relative flex items-center">
-            <label className="text-[13px] text-white absolute top-[-10px] left-0 font-semibold">Serviço</label>
+            <label className="text-[13px] text-white absolute top-[-10px] left-0 font-semibold">Serviço <span className="text-red-500">*</span></label>
             <div className="w-full border-b-2 border-gray-100 focus-within:border-[#333]">
               <select
                 id="underline_select"
@@ -92,6 +106,7 @@ export const Agenda = () => {
                 value={formData.servico}
                 onChange={handleChange}
                 className="px-2 pt-5 pb-2 bg-black w-full text-sm text-gray-400 outline-none"
+                required
               >
                 <option value="">Escolha um serviço</option>
                 {servicosData.servicos.map((servico, index) => (
@@ -101,10 +116,10 @@ export const Agenda = () => {
             </div>
           </div>
         </div>
-        <button
-          type="button"
-          onClick={handleSubmit}
-          className="mt-10 px-2 py-2.5 w-full rounded text-sm font-semibold bg-yellow-400 text-black hover:bg-yellow-500"
+        <button 
+        type="button"
+        onClick={handleSubmit}
+        className="mt-10 px-2 py-2.5 w-full rounded text-sm font-semibold bg-yellow-400 text-black hover:bg-yellow-500"
         >
           Agendar
         </button>
