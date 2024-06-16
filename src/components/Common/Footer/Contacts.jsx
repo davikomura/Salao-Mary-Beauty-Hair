@@ -1,6 +1,8 @@
 import React from "react";
 import { FaFacebook, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { FaPix } from "react-icons/fa6";
+import MasterCard from '../../../assets/mc_symbol.svg';
+import visa from '../../../assets/visa-10.svg';
 
 const Contacts = () => {
     const iconSize = 24;
@@ -29,6 +31,12 @@ const Contacts = () => {
                             <div className="flex justify-start mt-4 mb-4">
                                 <p className="text-pix-color mr-6">
                                     <FaPix size={iconSize} />
+                                </p>
+                                <p className="mr-6 mt-2">
+                                    <img src={MasterCard} alt="MasterCard" width={iconSize} height={iconSize} />
+                                </p>
+                                <p className="mr-6 mt-2.5">
+                                    <img src={visa} alt="MasterCard" width={iconSize} height={iconSize} />
                                 </p>
                                 {/* <a href="#" className="text-green-500 mr-6 hover:text-green-700 transition-colors duration-300"><FaWhatsapp size={iconSize} /></a>
                                 <a href="https://www.instagram.com/salaomaryslz/"
