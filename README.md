@@ -1,46 +1,46 @@
-# Salão Mary Beauty Hair Website
+# Mary Beauty Hair Salon Website
 
-Este projeto consiste na criação de um site para o Salão Mary Beauty Hair, utilizando React com JavaScript e CSS Tailwind. O objetivo do site é promover os serviços oferecidos pelo salão, bem como facilitar o contato com os clientes.
+This project involves creating a website for Mary Beauty Hair Salon, using React with JavaScript and Tailwind CSS. The goal of the site is to promote the salon's services and facilitate client contact.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - React
 - JavaScript
-- CSS Tailwind
+- Tailwind CSS
 
-## Instalação
+## Installation
 
-Para rodar o projeto localmente, siga os passos abaixo:
+To run the project locally, follow these steps:
 
-1. Clone o repositório:
+1. Clone the repository:
    ```sh
    git clone https://github.com/davikomura/Salao-Mary-Beauty-Hair.git
    ```
 
-2. Navegue até o diretório do projeto:
+2. Navigate to the project directory:
    ```sh
    cd Salao-Mary-Beauty-Hair
    ```
 
-3. Instale as dependências:
+3. Install the dependencies:
    ```sh
    npm install
    ```
 
-4. Inicie o servidor de desenvolvimento:
+4. Start the development server:
    ```sh
    npm start
    ```
 
-5. Acesse o site em seu navegador:
+5. Access the website in your browser:
    ```
    http://localhost:3000
    ```
-   
-## Autor
 
-Este projeto foi desenvolvido por [Davi Komura](https://github.com/davikomura).
+## Author
 
-## Licença
+This project was developed by [Davi Komura](https://github.com/davikomura).
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
