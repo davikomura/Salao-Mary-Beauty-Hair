@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo_salao.jpg"
-import dona from "../../assets/img_dona.png"
+import dona from "../../assets/img_dona2.png"
 
 const About = () => {
     return(
