@@ -60,7 +60,7 @@ const Contacts = () => {
                 </div>
                 <hr className="my-4 border-gray-600" />
                 <div className="text-center text-gray-600 py-4">
-                    © {new Date().getFullYear()} Mary Beauty Hair. All Rights Reserved. Design by Davi Komura.
+                    © {new Date().getFullYear()} Mary Beauty Hair. All Rights Reserved. Developed by Davi Komura.
                 </div>
             </div>
         </section>
