@@ -11,11 +11,11 @@ const Contacts = () => {
         <section id="Contacts" className="pt-10 overflow-hidden bg-black dark:bg-gray-800 md:pt-0 sm:pt-16 2xl:pt-16">
             <div className="text-center p-8 bg-black">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4 mb-28">
-                    <div className="group relative ml-8">
+                    <div className="group relative sm:ml-8">
                         <h2 className="text-lg md:text-left sm:text-xl md:text-2xl lg:text-3xl text-white mb-4">
                             Conecte-se conosco!
                         </h2>
-                        <div className="flex justify-start mt-4 mb-4">
+                        <div className="flex justify-center sm:justify-start mt-4 mb-4">
                             <a href="https://www.facebook.com/SalaoMaryBeauty"
                                 target="_blank"
                                 className="text-blue-500 mr-6 hover:text-blue-700 transition-colors duration-300"><FaFacebook size={iconSize} /></a>
@@ -28,7 +28,7 @@ const Contacts = () => {
                             <h2 className="text-lg md:text-left sm:text-xl md:text-2xl lg:text-3xl text-white mb-4">
                                 Formas de Pagamento
                             </h2>
-                            <div className="flex justify-start mt-4 mb-4">
+                            <div className="flex justify-center sm:justify-start mt-4 mb-4">
                                 <p className="text-pix-color mr-6">
                                     <FaPix size={iconSize} />
                                 </p>
@@ -36,22 +36,18 @@ const Contacts = () => {
                                     <img src={MasterCard} alt="MasterCard" width={iconSize} height={iconSize} />
                                 </p>
                                 <p className="mr-6 mt-2.5">
-                                    <img src={visa} alt="MasterCard" width={iconSize} height={iconSize} />
+                                    <img src={visa} alt="Visa" width={iconSize} height={iconSize} />
                                 </p>
-                                {/* <a href="#" className="text-green-500 mr-6 hover:text-green-700 transition-colors duration-300"><FaWhatsapp size={iconSize} /></a>
-                                <a href="https://www.instagram.com/salaomaryslz/"
-                                    target="_blank"
-                                    className="text-pink-500 hover:text-pink-700 transition-colors duration-300"><FaInstagram size={iconSize} /></a> */}
                             </div>
                         </div>
                     </div>
-                    <div className="text-left text-white ml-8">
+                    <div className="text-left text-white sm:ml-8">
                         <h2 className="text-center md:text-left text-lg sm:text-xl md:text-2xl lg:text-3xl text-white mb-4">Email</h2>
                         <p className="mb-6 text-center md:text-left">maryoliver.mo63@gmail.com</p>
                         <h2 className="text-center md:text-left text-lg sm:text-xl md:text-2xl lg:text-3xl text-white mb-4">Endereço</h2>
                         <p className="text-center md:text-left">R. Fé Em Deus, 610 - Quadra 113 - Jardim São Cristovão, São Luís - MA, 65055-190</p>
                     </div>
-                    <div className="text-left text-white ml-8">
+                    <div className="text-left text-white sm:ml-8">
                         <h2 className="text-center md:text-left text-lg sm:text-xl md:text-2xl lg:text-3xl text-white mb-4">Horários de Funcionamento </h2>
                         <p className="text-center md:text-left mb-2">Segunda-Feira : Fechado</p>
                         <p className="text-center md:text-left mb-2">Terça-Feira : 08:00 – 19:00</p>
