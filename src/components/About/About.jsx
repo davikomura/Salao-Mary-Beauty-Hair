@@ -13,9 +13,9 @@ const About = () => {
                             Sobre Nós
                         </h2>
                         <p className="max-w-lg mt-3 text-xl leading-relaxed text-white dark:text-gray-300 md:mt-8">
-                            Amet minim mollit non deserunt
-                            ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-                            Exercitation veniam consequat sunt nostrud amet.
+                        No Mary Beauty Hair, estamos dedicados a realçar a sua beleza com elegância e sofisticação. Com 13 anos de experiência no mercado, nosso salão é especializado em oferecer serviços de alta qualidade, sempre priorizando o cuidado e a satisfação dos nossos clientes. Localizados em São Luís, proporcionamos um ambiente acolhedor e moderno, onde você pode relaxar enquanto recebe um atendimento personalizado e profissional.
+
+Seja para transformar o visual ou para manter a sua beleza, estamos aqui para garantir que você saia do nosso salão se sentindo ainda mais confiante e deslumbrante. Agende o seu horário e experimente o que há de melhor em cuidados de beleza.
                         </p>
                     </div>
 
