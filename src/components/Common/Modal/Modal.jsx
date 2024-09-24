@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import { IoCloseCircle } from "react-icons/io5";
 
 const Modal = ({ servico, onClose }) => {
@@ -55,7 +56,7 @@ const Modal = ({ servico, onClose }) => {
                                 Fechar
                             </button>
                             <button className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
-                                Agendar
+                                <Link to='/Agendamento'>Agendar</Link>
                             </button>
                         </div>
                     </div>
